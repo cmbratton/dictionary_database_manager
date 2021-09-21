@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Manage Vocab</title>
+    <meta name="author" content="Colby Bratton" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="managewords.css" />
+  </head>
+
+  <body>
+    <h1>Manage GRE Vocabulary Word File</h1>
+
+    <section id="success_monitor">
+    </section>
+
+    <form method="post" id="add_delete_form" action="managewords.php">
+      <div id="add_grid">
+        <div>
+          <label for="word">Word: </label>
+        </div>
+        <div id="word_input">
+          <input type="text" id="word" name="word" placeholder="word" />
+        </div>
+
+        <div></div>
+
+        <div></div> <div></div>
+
+        <div>
+          <label for="part">Part of Speech: </label>
+        </div>
+        <div id="part_input">
+          <select id="part" name="part">
+            <option value="">&mdash;select a value&mdash;</option>
+            <option value="noun">noun</option>
+            <option value="verb">verb</option>
+            <option value="adjective">adjective</option>
+            <option value="adverb">adverb</option>
+          </select>
+        </div>
+
+        <div></div>
+        
+        <div></div> <div></div>
+
+        <div id="definition_input">
+          <label for="definition">Definition: </label>
+        </div>
+        <div>
+          <input type="text" id="definition" name="definition"
+                 placeholder="definition" />
+        </div>
+
+        <div></div>
+
+        <div></div>  <div></div>
+
+        <div id="add_button_cell">
+          <button id="add_button">Add</button>
+        </div>
+      </div> <!-- end of add grid -->
+
+      <hr />
+
+      <div id="delete_grid">
+        
+        <ul id="del_list">
+        </ul>
+
+        <div id="delete_button_cell">
+          <button id="delete_button">Delete these words</button>
+        </div>
+        
+        <hr />
+        
+        <section id="searchcontrols">
+          <p>
+            <label for="wordsearch">Search: </label>
+            <input type="text" id="wordsearch" />
+          </p>
+        </section>
+        
+        <dl id="search_results_grid">
+        </dl>
+        
+      </div> <!-- end of delete grid -->
+    </form>
+    <script src="managewords.js"></script>
+  </body>
+</html>
