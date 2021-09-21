@@ -1,0 +1,2 @@
+# dictionary_database_manager
+Smaller project that demonstrates basic utilization of languages and resources, such as HTML, CSS, PHP, Javascript, MySQL, AJAX server communication, and JSON encoding/decoding. This project focused on the manipulation, by the user, of a database of words that can be utilized as a dictionary. The user is allowed to add and delete words from the database (no duplicate entries).
